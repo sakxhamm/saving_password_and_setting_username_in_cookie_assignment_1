@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Count Tracker</title>
+    <title>Login</title>
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <h1>Welcome to the Cookie Count Tracker!</h1>
-    <p>Page views for this session:</p>
-    <div id="countDisplay">Loading count...</div>
+    <h2>Login Page</h2>
+    <form onsubmit="saveUser(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
 </body>
-
-<script src="./script.js"></script>
-
 </html>
